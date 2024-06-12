@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+package Account;
+
+//////////////////////////////////////////
+message SynServerLog_Game2Gate
+{
+	uint64 uid			= 1;	//0为系统 >0 为玩家udi
+	uint64 uParam 		= 2;	//int参数
+	bytes sLog 			= 3;	//log
+}
+
+message TestMessage
+{
+	uint32 testid				= 1;
+}
